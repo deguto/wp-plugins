@@ -1,0 +1,13 @@
+{
+  "name": "deguto/deguto-termrobot",
+  "authors": [
+    {
+      "name": "Deguto",
+      "email": "info@deguto.de"
+    }
+  ],
+  "type"    : "wordpress-plugin", 
+  "require" : { 
+    "composer/installers": "~1.0"
+  }
+}
