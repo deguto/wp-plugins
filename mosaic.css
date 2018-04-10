@@ -1,0 +1,201 @@
+/*
+	Mosaic - Sliding Boxes and Captions jQuery Plugin
+	Version 1.0.1
+	www.buildinternet.com/project/mosaic
+	
+	By Sam Dunn / One Mighty Roar (www.onemightyroar.com)
+	Released under MIT License / GPL License
+*/
+
+/*General Mosaic Styles*/
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:400px;
+	height:250px;
+	margin:10px;
+	background:#111 url(../img/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+	.mosaic-backdrop {
+		position:absolute;
+		top:0;
+		height:100%;
+		width:100%;
+		background: #fff;
+	}
+  
+	.mosaic-wrapper > div {
+    margin: 2px;
+	}
+	
+	.mosaic-overlay {
+		display:none;
+		z-index:5;
+		position:absolute;
+		width:100%;
+		height:100%;
+		background:#111;
+	}
+  
+		/*** Custom Animation Styles (You can remove/add any styles below) ***/
+		.circle .mosaic-overlay {
+			background:url(../img/hover-magnify.png) no-repeat center center;
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			display:none;
+		}
+		
+		.fade .mosaic-overlay {
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			background:url(../img/bg-black.png);
+		}
+		
+		.bar .mosaic-overlay {
+			bottom:-100px;
+			height:100px;
+			background:url(../img/bg-black.png);
+		}
+		
+		.bar2 .mosaic-overlay {
+			bottom:-50px;
+			height:100px;
+			opacity:0.8;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+			filter:alpha(opacity=80);
+		}
+		
+			.bar2 .mosaic-overlay:hover {
+				opacity:1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				filter:alpha(opacity=100);
+			}
+		
+		.bar3 .mosaic-overlay {
+			top:-100px;
+			height:100px;
+			background:url(../img/bg-black.png);
+		}
+		/*** End Animation Styles ***/
+
+.mosaic-wrapper{
+	position: relative;
+	float: left;
+	width: 500px;
+  height: 500px;
+	background-color: #fff;
+}
+.wp1{
+	position: relative;
+	float: left;
+	width: 332px;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+}
+.wp1 div{
+	width: 100%;
+}
+.g11{
+	float:left;
+	position:relative;
+	overflow:hidden;
+	background:#111 url(../img/progress.gif) no-repeat center center;
+	height: 164px;	
+}
+.wp2{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 164px;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+}
+.wp2 div{
+	width: 100%;
+}
+.g21{
+	float:left;
+	position:relative;
+	overflow:hidden;	
+	margin:0px;
+	background:#111 url(../img/progress.gif) no-repeat center center;
+	height: 164px;	
+  margin-right: 0;
+}
+.mt {
+  margin-top: 4px;
+}
+.wp3{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 164px;
+  margin-left: 0 !important;
+}
+.wp3 div{
+	width: 100%;
+}
+.g31{
+	height: 164px;	
+	margin-top: 0;
+}
+.g32{
+	height: 164px;	
+	margin-top: 0;
+}
+.wp4{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 164px;
+}
+.wp4 div{
+	width: 100%;
+}
+.g41{
+	float:left;
+	position:relative;
+	overflow:hidden;	
+	background: #111 url(../img/progress.gif) no-repeat center center;
+	height: 332px;	
+}
+.wp5{
+	position: relative;
+	float: left;
+	left: 0px;
+	width: 164px;
+  margin-right: 0 !important;
+}
+.wp5 div{
+	width: 100%;
+}
+.g51{
+	height: 164px;	
+}
+.g52{
+	height: 164px;	
+}
+.mosaic-backdrop {
+		top:0;
+		overflow:hidden;
+	}
+
+
+.mosaic-wrapper	.clearfix { display: block; height: 0; clear: both; visibility: hidden; }
+.mosaic-wrapper .details { margin:15px 5px; }	
+.mosaic-wrapper h1 { font:300 33px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.15em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+.mosaic-wrapper p { font:300 12px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+.mosaic-wrapper a { text-decoration:none; }
+
+.mosaic-overlay h1 {
+  color: #eee !important;
+  font-size: 30px !important;
+  font-weight: bold;
+  font:300 33px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.15em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0);
+}

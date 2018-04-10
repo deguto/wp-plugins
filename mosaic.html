@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<!--
+		Mosaic - Sliding Boxes and Captions jQuery Plugin
+		Version 1.0.1
+		www.buildinternet.com/project/mosaic
+		
+		By Sam Dunn / One Mighty Roar (www.onemightyroar.com)
+		Released under MIT License / GPL License
+	-->
+
+	<head>
+
+		<title>Mosaic - Sliding Boxes and Captions jQuery Plugin</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		
+		<link rel="stylesheet" href="css/mosaic.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
+		
+		<script type="text/javascript">  
+			
+			jQuery(function($){
+				
+				$('.circle').mosaic({
+					opacity		:	0.8			//Opacity for overlay (0-1)
+				});
+				
+				$('.fade').mosaic();
+				
+				$('.bar').mosaic({
+					animation	:	'slide'		//fade or slide
+				});
+				
+				$('.bar2').mosaic({
+					animation	:	'slide'		//fade or slide
+				});
+				
+				$('.bar3').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top'		//Vertical anchor position
+				});
+				
+				$('.cover').mosaic({
+					animation	:	'slide',	//fade or slide
+					hover_x		:	'400px'		//Horizontal position on hover
+				});
+				
+				$('.cover2').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top',		//Vertical anchor position
+					hover_y		:	'80px'		//Vertical position on hover
+				});
+				
+				$('.cover3').mosaic({
+					animation	:	'slide',	//fade or slide
+					hover_x		:	'400px',	//Horizontal position on hover
+					hover_y		:	'300px'		//Vertical position on hover
+				});
+		    
+		    });
+		    
+		</script>
+		
+		<style type="text/css">
+		
+			/*Demo Styles*/
+			body{ #background:#e9e8e4 }
+				#content{ width:845px; margin:20px auto; padding:10px 30px; }
+				.clearfix{ display: block; height: 0; clear: both; visibility: hidden; }
+						
+				.details{ margin:15px 20px; }	
+					h1{ font:300 16px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.15em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+					p{ font:300 12px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+					a{ text-decoration:none; }
+		
+		</style>
+		
+	</head>
+
+<body>
+
+<div class="wrapper">	
+	
+	<div class="wp1">	
+		<div class="g11 bar">
+			<a href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h1>Willkommen</h1>	
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="images/1.jpg"/></div>
+		</div>	
+</div>
+<div class="wp2">	
+		<div class="g21 bar">
+			<a href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h1>Natur</h1>				
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="images/2.jpg"/></div>
+		</div>
+
+</div>
+
+<div class="wp3">	
+		<div class="g21 bar">
+			<a href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h1>Erleben</h1>					
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="images/3.jpg"/></div>
+		</div>
+<div class="g21 bar">
+			<a href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h1>Genuss</h1>					
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="images/5.jpg"/></div>
+		</div>
+</div>
+<div class="wp4">	
+<div class="g41 bar">
+			<a href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h1>Wellness</h1>					
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="images/4.jpg"/></div>
+		</div>
+</div>
+<div class="wp5">	
+<div class="g21 bar">
+			<a href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h1>Wohnen</h1>					
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="images/6.jpg"/></div>
+		</div>
+<div class="g21 bar">
+			<a href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h1>Business</h1>					
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="images/7.jpg"/></div>
+		</div>	
+</div>	
+		
+		<div class="clearfix"></div>
+	</div>
+	
+</body>
+</html>
